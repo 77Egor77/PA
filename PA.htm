@@ -1,0 +1,318 @@
+<html>
+<head><style>
+*
+{margin: 0; padding: 0; box-sizing: border-box;}
+
+.navigator
+{width: 100%; position: fixed; background: #000; display: flex; justify-content: space-around; align-items: center; padding: 1% 0; font-size: 4vh;}
+
+.navigator lu
+{display: flex;}
+
+.navigator lu li
+{list-style: none; padding: 10px 25px;}
+
+.navigator lu li a
+{text-decoration: none; display: block; color: #fff; padding: 10px;}
+
+.navigator lu li a:hover
+{background: #fff; color: #000; border-radius: 8px;}
+
+.logop
+{background-image: url(photo/logotip.png); background-color: #ffff00; height: 100%; font-size: 8vh; background-position: 50% 50%;  background-repeat: no-repeat; background-attachment: no-fixed; background-size: auto 100%; width: 50%; display: inline-block;}
+.logop1
+{background-image: url(photo/logotip1.jpg); background-color: #ffff00; height: 100%; font-size: 8vh; background-position: 50% 50%;  background-repeat: no-repeat; background-attachment: no-fixed; background-size: auto 80%; width: 50%; margin: 0% 0% 0% -4px; display: inline-block;}
+
+.probel
+{background-color: #000000; height: 15%; width: 100%; margin: 0% 0% 0% 0%; margin: -4px 0 0 0;}
+
+#prych 
+{margin: 20px 0 0 0;}
+
+.prav
+{background-color: #ffffff; height: 15%; width: 100%; margin: 0% 0% 0% 0%; font-size: 12vh; vertical-align: middle;}
+
+.pravila
+{background-image: url(); background-color: #00ffff; height: 100%; font-size: 8vh; background-position: 50% 50%;  background-repeat: no-repeat; background-attachment: no-fixed; background-size: 70% auto; width: 100%; margin: 0% 0% 0% 0%;}
+
+.spisok
+{background-color: #ffffff; height: 15%; width: 100%; margin: 0% 0% 0% 0%; font-size: 12vh; vertical-align: middle;}
+
+.spr
+{background-color: #ffffff; height: 4%; width: 100%; margin: 0% 0% -4px 0%;}
+
+.s0
+{background-color: #ffffff; height: 28%; display: inline-block; width: 1.7%;}
+
+.s01
+{background-color: #ffffff; height: 10%; display: inline-block; width: 1.7%;}
+
+.ph
+{background-color: #ff0000; height: 28%; display: inline-block; width: 15%; margin: 0% 0% 0% -4px; background-position: 50% 50%;  background-repeat: no-repeat; background-attachment: no-fixed; background-size: 90% auto;}
+
+.sp
+{background-color: #ffff00; height: 10%; display: inline-block; width: 15%; margin: 0% 0% 0% -4px;}
+
+#s1s1
+{background-image: url(photo/rodik.jpg); margin: 0 0 0 0;}
+#s2s1
+{background-image: url(photo/ya.jpg);}
+#s3s1
+{background-image: url(photo/petin.jpg);}
+#s4s1
+{background-image: url(photo/gochylak.jpg);}
+#s5s1
+{background-image: url(photo/);}
+#s6s1
+{background-image: url(photo/);}
+
+#s1s2
+{font-size: 4vh; margin: 0 0 0 0;}
+#s2s2
+{font-size: 6vh;}
+#s3s2
+{font-size: 4vh;}
+#s4s2
+{font-size: 6vh;}
+#s5s2
+{font-size: 4vh;}
+#s6s2
+{font-size: 4vh;}
+
+#s1s3
+{background-image: url(photo/); margin: 0 0 0 0;}
+#s2s3
+{background-image: url(photo/);}
+#s3s3
+{background-image: url(photo/);}
+#s4s3
+{background-image: url(photo/);}
+#s5s3
+{background-image: url(photo/);}
+#s6s3
+{background-image: url(photo/);}
+
+#s1s4
+{font-size: 4vh; margin: 0 0 0 0;}
+#s2s4
+{font-size: 4vh;}
+#s3s4
+{font-size: 4vh;}
+#s4s4
+{font-size: 4vh;}
+#s5s4
+{font-size: 4vh;}
+#s6s4
+{font-size: 4vh;}
+
+#p1p1
+{background-image: url(photo/MRAZ.jpg); margin: 0 0 0 0;}
+#p2p1
+{background-image: url(photo/);}
+#p3p1
+{background-image: url(photo/);}
+#p4p1
+{background-image: url(photo/);}
+#p5p1
+{background-image: url(photo/);}
+#p6p1
+{background-image: url(photo/);}
+
+#p1p2
+{font-size: 4vh; margin: 0 0 0 0;}
+#p2p2
+{font-size: 6vh;}
+#p3p2
+{font-size: 4vh;}
+#p4p2
+{font-size: 6vh;}
+#p5p2
+{font-size: 4vh;}
+#p6p2
+{font-size: 4vh;}
+
+#p1p3
+{background-image: url(photo/); margin: 0 0 0 0;}
+#p2p3
+{background-image: url(photo/);}
+#p3p3
+{background-image: url(photo/);}
+#p4p3
+{background-image: url(photo/);}
+#p5p3
+{background-image: url(photo/);}
+#p6p3
+{background-image: url(photo/);}
+
+#p1p4
+{font-size: 4vh; margin: 0 0 0 0;}
+#p2p4
+{font-size: 4vh;}
+#p3p4
+{font-size: 4vh;}
+#p4p4
+{font-size: 4vh;}
+#p5p4
+{font-size: 4vh;}
+#p6p4
+{font-size: 4vh;}
+
+.zad
+{background-color: #ffffff; height: 15%; width: 100%; margin: 0% 0% 0% 0%; font-size: 12vh; vertical-align: middle;}
+.zadachi
+{background-image: url(); background-color: #00ffff; height: 100%; font-size: 8vh; background-position: 50% 50%;  background-repeat: no-repeat; background-attachment: no-fixed; background-size: 70% auto; width: 100%; margin: 0% 0% 0% 0%;}
+
+</style>
+<title>ПенисAkademy</title>
+</head>
+<body>
+<div class="navigator">
+	<lu>
+		<li><a href="#logop">Логотип</a></li>
+		<li><a href="#pravila">Правила</a></li>	
+		<li><a href="#spisok">Доска почета</a></li>
+		<li><a href="#pozor">Доска позора</a></li>
+		<li><a href="#zad">задачи недели</a></li>
+	</lu>
+</div>
+<div class="probel" id="logop"></div>
+
+<div class="logop"></div>
+<div class="logop1"></div>
+<div class="probel" id="pravila"></div>
+<div class="prav" align=center><font>Правила!</font></div>
+<div class="pravila" ><font>
+1.Нет никогогог нигатива, вообще никогого, мы все братья, мы все топим за одну идею PenisAkademy
+</font></div>
+<div class="probel" id="spisok"></div>
+
+<div class="spisok" align=center ><font>Доска почета!</font></div>
+
+<div style="margin: 0 20px 20px 20px;">
+
+<div class="ph" id="s1s1"></div>
+<div class="s0"></div>
+<div class="ph" id="s2s1"></div>
+<div class="s0"></div>
+<div class="ph" id="s3s1"></div>
+<div class="s0"></div>
+<div class="ph" id="s4s1"></div>
+<div class="s0"></div>
+<div class="ph" id="s5s1"></div>
+<div class="s0"></div>
+<div class="ph" id="s6s1"></div>
+
+<div class="spr"></div>
+
+<div class="sp" id="s1s2"><div style="position: absolute; margin: 0% 0% 0% 7px;"><font>Картофельный<br>барон</font></div></div>
+<div class="s01"></div>
+<div class="sp" id="s2s2"><div style="position: absolute; margin: 0% 0% 0% 7px;"><font>IT-monkey</font></div></div>
+<div class="s01"></div>
+<div class="sp" id="s3s2"><div style="position: absolute; margin: 0% 0% 0% 7px;"><font>Магистр<br>петтинг</font></div></div>
+<div class="s01"></div>
+<div class="sp" id="s4s2"><div style="position: absolute; margin: 0% 0% 0% 7px;"><font>Пигмастер</font></div></div>
+<div class="s01"></div>
+<div class="sp" id="s5s2"><font></font></div>
+<div class="s01"></div>
+<div class="sp" id="s6s2"><font></font></div>
+
+<div class="spr"></div>
+
+<div class="ph" id="s1s3"></div>
+<div class="s0"></div>
+<div class="ph" id="s2s3"></div>
+<div class="s0"></div>
+<div class="ph" id="s3s3"></div>
+<div class="s0"></div>
+<div class="ph" id="s4s3"></div>
+<div class="s0"></div>
+<div class="ph" id="s5s3"></div>
+<div class="s0"></div>
+<div class="ph" id="s6s3"></div>
+
+<div class="spr"></div>
+
+<div class="sp" id="s1s4"><font></font></div>
+<div class="s01"></div>
+<div class="sp" id="s2s4"><font></font></div>
+<div class="s01"></div>
+<div class="sp" id="s3s4"><font></font></div>
+<div class="s01"></div>
+<div class="sp" id="s4s4"><font></font></div>
+<div class="s01"></div>
+<div class="sp" id="s5s4"><font></font></div>
+<div class="s01"></div>
+<div class="sp" id="s6s4"><font></font></div>
+
+</div>
+
+<div class="probel" id="pozor"></div>
+
+<div class="spisok" align=center ><font>Доска позора!</font></div>
+
+<div style="margin: 0 20px 20px 20px;">
+
+<div class="ph" id="p1p1"></div>
+<div class="s0"></div>
+<div class="ph" id="p2p1"></div>
+<div class="s0"></div>
+<div class="ph" id="p3p1"></div>
+<div class="s0"></div>
+<div class="ph" id="p4p1"></div>
+<div class="s0"></div>
+<div class="ph" id="p5p1"></div>
+<div class="s0"></div>
+<div class="ph" id="p6p1"></div>
+
+<div class="spr"></div>
+
+<div class="sp" id="p1p2"><div style="position: absolute; margin: 0% 0% 0% 7px;"><font>ГЛАВНАЯ<br>МРАЗЬ</font></div></div>
+<div class="s01"></div>
+<div class="sp" id="p2p2"><div style="position: absolute; margin: 0% 0% 0% 7px;"><font></font></div></div>
+<div class="s01"></div>
+<div class="sp" id="p3p2"><div style="position: absolute; margin: 0% 0% 0% 7px;"><font></font></div></div>
+<div class="s01"></div>
+<div class="sp" id="p4p2"><div style="position: absolute; margin: 0% 0% 0% 7px;"><font></font></div></div>
+<div class="s01"></div>
+<div class="sp" id="p5p2"><font></font></div>
+<div class="s01"></div>
+<div class="sp" id="p6p2"><font></font></div>
+
+<div class="spr"></div>
+
+<div class="ph" id="p1p3"></div>
+<div class="s0"></div>
+<div class="ph" id="p2p3"></div>
+<div class="s0"></div>
+<div class="ph" id="p3p3"></div>
+<div class="s0"></div>
+<div class="ph" id="p4p3"></div>
+<div class="s0"></div>
+<div class="ph" id="p5p3"></div>
+<div class="s0"></div>
+<div class="ph" id="p6p3"></div>
+
+<div class="spr"></div>
+
+<div class="sp" id="p1p4"><font></font></div>
+<div class="s01"></div>
+<div class="sp" id="p2p4"><font></font></div>
+<div class="s01"></div>
+<div class="sp" id="p3p4"><font></font></div>
+<div class="s01"></div>
+<div class="sp" id="p4p4"><font></font></div>
+<div class="s01"></div>
+<div class="sp" id="p5p4"><font></font></div>
+<div class="s01"></div>
+<div class="sp" id="p6p4"><font></font></div>
+
+</div>
+
+<div class="probel" id="zad"></div>
+
+<div class="zad"  align=center><font>Задачи недели!</font></div>
+<div class="zadachi"></div>
+
+<div class="probel"></div>
+</body>
+</html>
